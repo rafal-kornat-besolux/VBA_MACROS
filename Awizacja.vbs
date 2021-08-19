@@ -65,7 +65,7 @@ RETURN_VALUE = "kacperberski.gibmeble@gmail.com"
 Case "SOB"
 RETURN_VALUE = "warehouse@besolux.com"
 Case "KAL"
-RETURN_VALUE = "marta.slowinska@kalmar.pl; patrycja.szalasz@kalmar.pl"      
+RETURN_VALUE = "malgorzata.jasinska@kalmar.pl; patrycja.szalasz@kalmar.pl"      
 End Select
 sprawdz = RETURN_VALUE
 End Function
