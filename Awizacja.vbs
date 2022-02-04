@@ -65,7 +65,13 @@ RETURN_VALUE = "kacperberski.gibmeble@gmail.com"
 Case "SOB"
 RETURN_VALUE = "warehouse@besolux.com"
 Case "KAL"
-RETURN_VALUE = "malgorzata.jasinska@kalmar.pl; patrycja.szalasz@kalmar.pl"      
+RETURN_VALUE = "malgorzata.jasinska@kalmar.pl; patrycja.szalasz@kalmar.pl"
+Case "BSO"
+RETURN_VALUE = "warehouse@besolux.com"
+Case "CHB"
+RETURN_VALUE = "biuro@chemeb.pl"
+Case "DOL"
+RETURN_VALUE = "m.dobrzynska@dolmar.pl"
 End Select
 sprawdz = RETURN_VALUE
 End Function
@@ -112,7 +118,10 @@ Factory(29) = "MOD"
 Factory(30) = "DAV"
 Factory(31) = "GIB"
 Factory(32) = "SOB"
-Factory(33) = "KAL"   
+Factory(33) = "KAL"
+Factory(34) = "BSO"
+Factory(35) = "CHB"
+Factory(35) = "DOL"
 text_in = ""
 For i = 1 To 33
     a = 0
@@ -130,7 +139,7 @@ Next i
 OutMail.BCC = text_bcc
 text_end = "Pozdrawiam / Kind Regards" & vbCrLf & "__" & vbCrLf
 'text_end = text_end & "Konrad Syguła"
-'text_end = text_end & "Sebastian Kosiński"
+text_end = text_end & "Dominik Mrozek"
 'text_end = text_end & "Marcin Kiełbik"
 text_end = text_end & vbCrLf & "www.besolux.com" & vbCrLf & vbCrLf & "Office PL: BESOLUX  //  ul. Łąkowa 7a / bud. E  //  90-562 Łódź  //  Poland" & vbCrLf
 text_end = text_end & "Warehouse: BESOLUX  //  ul. Polskich Kolei Państwowych 6  //  92-402 Łódź  //  Poland" & vbCrLf & "NIP: 7292718480"
