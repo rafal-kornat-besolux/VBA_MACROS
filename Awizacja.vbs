@@ -72,6 +72,12 @@ Case "CHB"
 RETURN_VALUE = "biuro@chemeb.pl"
 Case "DOL"
 RETURN_VALUE = "m.dobrzynska@dolmar.pl"
+Case "GAL"
+RETURN_VALUE = "estera.wroblewska@galameble.com"
+Case "KAC"
+RETURN_VALUE = "biuro@mt-kaczmarek.com"
+Case "WJW"
+RETURN_VALUE = "biuro@ccloft.pl"
 End Select
 sprawdz = RETURN_VALUE
 End Function
@@ -121,9 +127,12 @@ Factory(32) = "SOB"
 Factory(33) = "KAL"
 Factory(34) = "BSO"
 Factory(35) = "CHB"
-Factory(35) = "DOL"
+Factory(36) = "DOL"
+Factory(37) = "GAL"
+Factory(38) = "WJW"
+Factory(39) = "KAC"
 text_in = ""
-For i = 1 To 33
+For i = 1 To 40
     a = 0
     For j = 0 To max_result
         If InStr(Result(j), Factory(i)) <> 0 Then
